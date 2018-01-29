@@ -11,39 +11,43 @@
 
     <VBox GridPane.columnIndex="0" spacing="10">
 
-        <Text text="   Hello, welcome to the JavaFX Age Calculator"
-        GridPane.rowIndex="0"
-        GridPane.columnIndex="0"></Text>
-
-        <Text text= " Please enter your name:"
-              fx:id="questionText"
-              GridPane.rowIndex="1"
+        <Text text="Hello, Welcome to JavaFX Age Calculator!"
+              fx:id="greetingText"
+              GridPane.rowIndex="0"
               GridPane.columnIndex="0"></Text>
 
-        <TextField fx:id="entryField"
-        GridPane.rowIndex="2"
-        GridPane.columnIndex="1"></TextField>
+        <Text text="What is your name:"
+              fx:id="questionText"
+              ></Text>
 
-        <Text text= ""
+
+        <TextField fx:id="userInput"></TextField>
+
+
+        <Button text="Submit"
+                onAction="#clickyButton"
+                fx:id="clickyButton"
+                ></Button>
+
+        <Text text=""
               fx:id="responseText"
-              GridPane.rowIndex="3"
-        GridPane.columnIndex="0"></Text>
+              GridPane.rowIndex="2"
+              GridPane.columnIndex="0"></Text>
 
-        <Text text= ""
+        <Text text=""
               fx:id="responseText2"
+              GridPane.rowIndex="3"
+              GridPane.columnIndex="0"></Text>
+
+        <Text text=""
+              fx:id="responseText3"
               GridPane.rowIndex="4"
               GridPane.columnIndex="0"></Text>
 
-        <Text text= ""
-              fx:id="responseText3"
+        <Text text=""
+              fx:id="responseText4"
               GridPane.rowIndex="5"
               GridPane.columnIndex="0"></Text>
-
-        <Button text="Submit"
-                fx:id="btnSubmit"
-                GridPane.columnIndex="1"
-                onAction="#onSubmitClick"/>
-
 
 
     </VBox>
